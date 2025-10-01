@@ -22,6 +22,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="/sobrenos" element={<SobreNos />} />
         <Route path="/contato" element={<Contato />} />
         <Route path="/servicos" element={<Servicos />} />
+
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
