@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import { BrowserRouter, Routes, Route } from "react-router";
 
+
 import Home from '../pages/Home.jsx';
 import SobreNos from '../pages/SobreNos.jsx';
 import Contato from '../pages/Contato.jsx';
