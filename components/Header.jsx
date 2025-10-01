@@ -1,66 +1,40 @@
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router"
+import Logo from "../src/img/Logo.png"
+import "./Header.css" // Arquivo de estilos extras
 
 const Header = () => {
   return (
     <header>
       <nav className="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
         <div className="container-fluid">
-          {/* Logo */}
-          <NavLink className="navbar-brand fw-bold text-success" to="/">
-            IOTEC
-          </NavLink>
 
-          {/* Botão menu mobile */}
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
+          {/* Logo */}
+          <Link className="navbar-brand ms-4" to="/">
+            <img 
+              src={Logo} 
+              alt="Logo IOTEC" 
+              style={{ height: "50px", width: "auto" }} 
+            />
+          </Link>
+
+          <button 
+            className="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarNavAltMarkup" 
+            aria-controls="navbarNavAltMarkup" 
+            aria-expanded="false" 
             aria-label="Toggle navigation"
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-
-          {/* Menu */}
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <div className="navbar-nav mx-auto gap-3">
-              <NavLink
-                to="/"
-                className={({ isActive }) =>
-                  `nav-link ${isActive ? "active fw-bold text-success" : ""}`
-                }
-              >
-                Home
-              </NavLink>
-
-              <NavLink
-                to="/sobrenos"
-                className={({ isActive }) =>
-                  `nav-link ${isActive ? "active fw-bold text-success" : ""}`
-                }
-              >
-                Sobre Nós
-              </NavLink>
-
-              <NavLink
-                to="/servicos"
-                className={({ isActive }) =>
-                  `nav-link ${isActive ? "active fw-bold text-success" : ""}`
-                }
-              >
-                Serviços
-              </NavLink>
-
-              <NavLink
-                to="/contatos"
-                className={({ isActive }) =>
-                  `nav-link ${isActive ? "active fw-bold text-success" : ""}`
-                }
-              >
-                Contatos
-              </NavLink>
+          
+          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div className="navbar-nav mx-auto gap-4">
+              <NavLink className="nav-link custom-link" to="/">Home</NavLink>
+              <NavLink className="nav-link custom-link" to="/sobrenos">Sobre Nós</NavLink>
+              <NavLink className="nav-link custom-link" to="/servicos">Serviços</NavLink>
+              <NavLink className="nav-link custom-link" to="/contato">Contato</NavLink>
             </div>
           </div>
         </div>

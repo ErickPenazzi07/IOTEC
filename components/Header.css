@@ -1,0 +1,44 @@
+/* Estilização personalizada da navbar */
+.navbar {
+  padding: 0.8rem 1.5rem;
+  font-size: 1.05rem;
+}
+.navbar-nav {
+    width: 100%;
+  flex: 1;
+  justify-content: center;
+}
+
+.custom-link {
+  position: relative;
+  font-weight: 500;
+  color: #333 !important;
+  transition: color 0.3s ease;
+}
+
+/* Efeito hover */
+.custom-link:hover {
+  color: #0d6efd !important; /* Azul padrão Bootstrap */
+}
+
+/* Underline animado */
+.custom-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -3px;
+  background-color: #0d6efd;
+  transition: width 0.3s ease;
+}
+
+.custom-link:hover::after {
+  width: 100%;
+}
+
+/* Quando o link estiver ativo */
+.custom-link.active {
+  color: #0d6efd !important;
+  font-weight: 600;
+}
