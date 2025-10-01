@@ -1,6 +1,6 @@
 import './App.css'
 import Header from '../components/Header'
-
+import Footer from '../components/Footer'
 function App() {
   return (
     <>
@@ -53,7 +53,13 @@ function App() {
           </div>
         </div>
       </div>
+ 
+      <div className="separator"></div>
+      <h1 className="text-center my-5">IOTEC - Soluções Sustentáveis para um Futuro Melhor</h1>
+      <div className="separator"></div>
+      <Footer />
     </>
+        
   )
 }
 
