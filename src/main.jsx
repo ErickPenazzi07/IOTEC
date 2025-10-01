@@ -6,7 +6,10 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import { BrowserRouter, Routes, Route } from "react-router";
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 import Home from '../pages/Home.jsx';
+=======
+>>>>>>> origin/Deverick
 import SobreNos from '../pages/SobreNos.jsx';
 import Contato from '../pages/Contato.jsx';
 =======
@@ -20,7 +23,6 @@ createRoot(document.getElementById("root")).render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/Home" element={<Home />} />
         <Route path="/sobrenos" element={<SobreNos />} />
 <<<<<<< HEAD
         <Route path="/contato" element={<Contato />} />
