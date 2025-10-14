@@ -12,6 +12,9 @@ import Contato from '../pages/Contato.jsx';
 import Home from "../pages/Home.jsx";
 import SobreNos from "../pages/SobreNos.jsx";
 import Servicos from "../pages/Servicos.jsx";
+import Instituições from "../pages/Instituições.jsx";
+import Login from "../pages/Login.jsx";
+import Registrar from "../pages/Registrar.jsx";
 
 createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -22,6 +25,9 @@ createRoot(document.getElementById("root")).render(
         <Route path="/sobrenos" element={<SobreNos />} />
         <Route path="/contato" element={<Contato />} />
         <Route path="/servicos" element={<Servicos />} />
+        <Route path="/instituições" element={<Instituições />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/registrar" element={<Registrar />} />
 
       </Routes>
     </BrowserRouter>
