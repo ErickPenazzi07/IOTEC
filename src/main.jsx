@@ -5,16 +5,18 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import { BrowserRouter, Routes, Route } from "react-router";
 
-
+<<<<<<< HEAD
+<<<<<<< HEAD
 import Home from '../pages/Home.jsx';
+=======
+>>>>>>> origin/Deverick
 import SobreNos from '../pages/SobreNos.jsx';
 import Contato from '../pages/Contato.jsx';
+=======
 import Home from "../pages/Home.jsx";
 import SobreNos from "../pages/SobreNos.jsx";
 import Servicos from "../pages/Servicos.jsx";
-import Instituições from "../pages/Instituições.jsx";
-import Login from "../pages/Login.jsx";
-import Registrar from "../pages/Registrar.jsx";
+>>>>>>> origin/Tiago
 
 createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -24,11 +26,9 @@ createRoot(document.getElementById("root")).render(
         <Route path="/Home" element={<Home />} />
         <Route path="/sobrenos" element={<SobreNos />} />
         <Route path="/contato" element={<Contato />} />
+=======
         <Route path="/servicos" element={<Servicos />} />
-        <Route path="/instituições" element={<Instituições />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/registrar" element={<Registrar />} />
-
+>>>>>>> origin/Tiago
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
