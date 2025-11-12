@@ -43,7 +43,7 @@ const Header = () => {
               <NavLink className="nav-link custom-link" to="/contato">
                 Contato
               </NavLink>
-              <NavLink className="nav-link custom-link" to="/instituições">
+              <NavLink className="nav-link custom-link" to="/instituicoes">
                 Instituições
               </NavLink>
             </div>
